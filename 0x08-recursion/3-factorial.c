@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _factorial - Entry point
+ * factorial - Entry point
  *
  * @n: function parameter
  *
