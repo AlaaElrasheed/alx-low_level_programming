@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion _ entrey point
+ * _print_rev_recursion - Entrey point
  *
  * @s: function parameter
  *
