@@ -4,43 +4,45 @@
 /**
  * _atoi - Entrey point
  *
- * @s; string
+ * @s: string
  *
  * Return: 0 success , non-zero fail
  */
 
 int _atoi(char *s)
 {
-	int w, q, r, n, length, digit;
+	int i, d, n, len, f, digit;
 
-	w = 0;
-	q = 0;
-	r = 0;
-	length = 0;
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
 	digit = 0;
 
-	while (s[length] != '\0')
-		length++;
+	while (s[len] != '\0')
+		len++;
 
-	while (w < length && r == 0)
+	while (i < len && f == 0)
 	{
-		if (s[w] == '-')
-			++q;
+		if (s[i] == '-')
+			++d;
 
-		if (s[w] >= '0' && s[w] <= '9')
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[w] - '0';
-			if (q % 2)
+			digit = s[i] - '0';
+			if (d % 2)
 				digit = -digit;
 			n = n * 10 + digit;
-			r = 1;
-			if (s[w + 1] < '0' || s[w + 1] > '9')
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			r = 0;
+			f = 0;
 		}
-		w++;
+		i++;
 	}
-	if (r == 0)
+
+	if (f == 0)
 	{
 		return (0);
 	}
@@ -49,14 +51,14 @@ int _atoi(char *s)
 }
 
 
-/**
- * main - Entry point
- *
- * @argc: No of arguments
- *
- * @argv: array of arguments
- *
- * Return: 0
+ /**
+  * main - Entrey point
+  *
+  *@argc: No of arguments
+
+  *@argv: array of arguments
+  *
+  * Return: 0
  */
 
 int main(int argc, char *argv[])
