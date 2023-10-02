@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * _atoi - Entrey point
+ * _atoi - converts string to intger
  *
  * @s: string
  *
- * Return: 0 success , non-zero fail
+ * Return: the converted from string
  */
 
 int _atoi(char *s)
