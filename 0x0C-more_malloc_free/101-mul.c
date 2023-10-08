@@ -4,8 +4,9 @@
 
 #define ERR_MSG "Error"
 
+
 /**
- * _isdigit - Entry point
+ * is_digit - Entry point
  *
  * @s: string
  *
