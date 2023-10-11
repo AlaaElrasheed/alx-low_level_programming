@@ -50,6 +50,7 @@ int op_mul(int a, int b)
  *
  * Return: The quotient of a and b
  */
+
 int op_div(int a, int b)
 {
 	return (a / b);
