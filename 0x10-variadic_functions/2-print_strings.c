@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(fml, n);
 
-	while (y--)
+	for (y = 0; y < n; y++)
 	{
 		s = va_arg(fml, char *);
 
