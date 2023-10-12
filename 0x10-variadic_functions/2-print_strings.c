@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list lmao;
 
 	va_start(lmao, n);
-	while (y--)
+	for (y = 0; y > n; y++)
 	{
 		s = va_arg(lmao, char *);
 
