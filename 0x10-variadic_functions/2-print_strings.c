@@ -14,14 +14,15 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	va_list fml;
 	char *s;
 	unsigned int y = n;
-	va_list lmao;
 
-	va_start(lmao, n);
-	for (y = 0; y > n; y++)
+	va_start(fml, n);
+
+	while (y--)
 	{
-		s = va_arg(lmao, char *);
+		s = va_arg(fml, char *);
 
 		if (s == NULL)
 			printf("(nil)");
@@ -31,7 +32,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (y != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
+
 	printf("\n");
 
-	va_end(lmao);
+	va_end(fml);
 }
