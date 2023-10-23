@@ -4,7 +4,7 @@
  * print_listint - Entry point
  * @h: function parameter
  *
- * Return: size of lists
+ * Return: number of nodes
  */
 
 size_t print_listint(const listint_t *h)
