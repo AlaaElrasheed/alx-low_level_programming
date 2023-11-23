@@ -1,1 +1,1 @@
-readme for C  bit manipulation
+readme for bit manipulation
